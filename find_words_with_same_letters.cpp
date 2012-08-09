@@ -71,6 +71,7 @@ void outputWords(char *wordsfile, char *outputfile){
 	out.close();
 }
 
+/*
 int main(){
 	cout<<"begin"<<endl;
 	time_t begin,end;
@@ -83,6 +84,7 @@ int main(){
 	cout<<"runtime:"<<end-begin<<endl;
 	return 0;
 }
+*/
 
 int convertWord2Number(string word){
 	int size=word.size();

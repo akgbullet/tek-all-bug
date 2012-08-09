@@ -52,6 +52,7 @@ void initAndTest(){
 	init_by_first_time(7);
 }
 
+/*
 int main(){
 	initAndTest();
 	display_init_ary_index_by_first_time(data,N);
@@ -60,3 +61,4 @@ int main(){
 	cout<<top<<endl;
 	return 0;
 }
+*/

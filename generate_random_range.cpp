@@ -9,7 +9,7 @@
 #include <time.h>
 
 using namespace std;
-void display(int *ary, int len);
+void display_(int *ary, int len);
 
 //generate k numbers between left and right
 //the first k numbers in ary is what we want
@@ -32,14 +32,16 @@ void generate_random(int k,int left, int right){
 	delete[] ary;
 }
 
-void display(int *ary, int len){
+void display_(int *ary, int len){
 	for(int i=0;i<len;i++){
 		cout<<ary[i]<<"\t";
 	}
 	cout<<endl;
 }
 
+/*
 int main(){
 	generate_random(5,0,20);
 	return 0;
 }
+*/

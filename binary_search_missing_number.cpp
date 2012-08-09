@@ -51,7 +51,9 @@ cout<<"\tlessCount:\t"<<lessCount
 	return to;
 }
 
+/*
 int main(){
 	cout<<"missing number is: "<<binary_search_missing_number("binary_search_test_file.txt",1,10000000);
 	return 0;
 }
+*/

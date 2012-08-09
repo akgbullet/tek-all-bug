@@ -43,11 +43,30 @@ void recursive_shift(int *ary, int shift, int len){
 	}
 }
 
+void loop_shift(int *ary, int len, int rotdist){
+	int i,p;
+	i=p=rotdist;
+	int j=len-i;
+	while(i!=j){
+		if(i<j){
+			swapAryIndex(ary,p-i,p+j-i,i);
+			j-=i;
+		}else{
+			swapAryIndex(ary,p-i,p,j);
+			i-=j;
+		}
+	}
+	swapAryIndex(ary,p-i,p,i);
+}
+
+/*
 int main(){
 	int ary[] = {0,1,2,3,4,5,6,7,8,9,10};
 	int len=11;
 	int shift=5;
-	recursive_shift(ary,shift,len);
+	//recursive_shift(ary,shift,len);
+	loop_shift(ary,len,shift);
 	displayAry_recursive_shift_vector(ary, len);
 	return 0;
 }
+*/

@@ -30,6 +30,8 @@ void display(int a[], int len){
 	}
 	cout<<endl;
 }
+
+/*
 int main(){
 	int count=1+N/BITSPERWORD;
 	for(int i=0; i<count; i++){
@@ -45,5 +47,6 @@ int main(){
 	display(ary,count);
 	return 0;
 }
+*/
 
 //--2012/7/24--

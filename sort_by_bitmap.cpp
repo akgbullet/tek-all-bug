@@ -39,6 +39,7 @@ void clearBit(int k){
 	bitary[k>>SHIFT] &= ~(1<<(k&MASK));
 }
 
+//return data is not just 1 or 0
 int testBit(int k){
 	return bitary[k>>SHIFT] & (1<<(k&MASK));
 }
